@@ -1,0 +1,327 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+    * {
+        margin: 0;
+        padding: 0;
+       }
+  
+  ul[class],
+  ol[class] {
+    padding: 0;
+  }
+  
+  body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+  }
+
+  ul[class], ol[class] {
+    list-style: none;
+  }
+  
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+  
+  a {
+      text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+body {
+    font-family: 'Indie Flower';
+    color: aliceblue;
+    font-size: 25px;
+    position: relative;
+	width: 100%;    
+	height: 420px;
+    background-color: rgba(0, 0, 0, 0.296);
+	background: 
+		linear-gradient(rgba(94, 94, 94, 0.1), rgba(0, 0, 0, 0.296)), 
+		url(/image/background.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top;  
+}
+
+.container {
+    padding: 0 120px;
+    margin: 0 auto;
+}
+
+/* lilita-one-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lilita One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lilita-one-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* indie-flower-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/indie-flower-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+
+  .images {
+    width: 160px;
+    height: 160px;
+  }
+
+
+/* Header start */
+.header-wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+.header-weather {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.header-weather-city {
+    text-shadow: 1px 1px 2px pink;
+    font-size: 42px;
+}
+
+.header-weather-cold_time {
+    display: flex;
+    column-gap: 15px;
+    font-size: 32px;
+}
+
+.header-weather-time {
+    text-shadow: 1px 1px 2px pink;
+    display: flex;
+}
+
+.header-weather-cold {
+    text-shadow: 1px 1px 2px pink;
+}
+
+.header-buttons {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+
+.header-button-menu img {
+    width: 50px;
+    height: 50px;
+}
+
+.header-button-pc img {
+    width: 70px;
+    height: 70px;
+}
+
+.header-button-sound img{
+    width: 50px;
+    height: 50px;
+}
+
+.header-button-sound-line {
+    border: 1px gray solid;
+    padding: 4px;
+    background-color: #fefefe;
+    border-radius: 20px;
+    width: 150px
+}
+
+.sloder_container {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 5px;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(255, 192, 203, 0.2);
+    background-color: #fff;
+    border-color: pink;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #fefefe;
+    border: 3px solid pink;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 5px 5px rgba(255, 192, 203, 0.2);
+}
+
+.volume_slider:hover {
+    opacity: 1.0;
+}
+/* Header end */
+
+
+
+
+/* Intro start */
+.intro-wrapper-text {
+    text-align: center;
+    margin-bottom: 290px;
+}
+
+.now-playing {
+    font-size: 1.5rem;
+    }
+
+.track-name {
+    font-size: 82px;
+    text-shadow: 2px 1px 2px pink;
+}
+
+.track-artist {
+    font-size: 52px;
+    text-shadow: 2px 1px 2px pink;
+}
+
+.seek_slider {
+    -webkit-appearance: none;
+    width: 30%;
+    height: 5px;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(255, 192, 203, 0.2);
+    background-color: #fff;
+    border-color: pink;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.seek_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #fefefe;
+    width: 20px;
+    height: 20px;
+    background: #fefefe;
+    border: 3px solid pink;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 5px 5px rgba(255, 192, 203, 0.2);
+}
+.slider_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.slider_container span{
+    margin-right: 430px;
+}
+
+.intro-wrapper-text-range-text span:last-child {
+    margin-right: 0;
+}
+/* Intro end */
+
+
+
+
+/* Footer start */
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.controls {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    position: fixed;
+}
+
+.controls div {
+    cursor: pointer;
+}
+
+.controls div:nth-child(2){
+    transform: scale(1.2);
+}
+
+.random-track img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.prev-track img {
+    width: 67px;
+    height: 67px;
+}
+
+.playpause-track img{
+    width: 80px;
+    height: 80px;
+}
+
+.next-track img {
+    width: 80px;
+    height: 80px;
+}
+
+.next-track img:hover {
+
+}
+
+.repeat-track {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+/* Footer end */
+
+
+img.playplay-track-image {
+    animation: 1s linear 0s normal none infinite running playplay-track-image;
+    -webkit-animation: 3s linear 0s normal none infinite running playplay-track-image;
+    width: 100px;
+    height: 100px;
+  }
+  @keyframes playplay-track-image {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes playplay-track-image {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

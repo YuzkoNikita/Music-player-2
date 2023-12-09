@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/3844724.png" type="image/png">
+</head>
+<body>
+    <!--
+    <audio id="player" autoplay="autoplay loop" type="audio/mp3" volume="1000">
+    <source src="image/svg/опенинг1твояапрельскаяложь_(radiodiva.ru).mp3">
+    </audio>
+    <div>
+    <div onclick="document.getElementById('player').pause(), onclick="document.getElementById('player').play()"><img class="images" src="image/svg/icons8-аудио-100.png" alt=""></div>
+    <div onclick="document.getElementById('player').play()">Воспроизведение</div>
+    </div> 
+    -->
+
+    <!--
+    <img src="image/svg/icons8-облако-80.png" alt=""> San Francisko
+    <img src="image/svg/icons8-почтовый-фильтр-50.png" alt=""> San Francisko
+    <img src="image/svg/icons8-рабочая-станция-48.png" alt=""> San Francisko
+    <img src="image/svg/icons8-рабочая-станция-80.png" alt=""> San Francisko
+    <img src="image/svg/icons8-громкий-звук-50.png" alt=""> San Francisko
+    <img src="image/svg/icons8-перемешать-60.png" alt=""> San Francisko
+    <img src="image/svg/icons8-влево-в-квадрате-100.png" alt=""> San Francisko
+    <img src="image/svg/icons8-вправо-в-квадрате-100.png" alt=""> San Francisko
+    <img src="image/svg/icons8-пластинка-80.png" alt=""> San Francisko
+    -->
+
+    <!-- Header start -->
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="header-weather">
+
+
+                    <div class="header-weather-info">
+                        <div class="header-weather-city">
+                            Yuzko Nikita
+                        </div>
+
+                        <div class="header-weather-cold_time">
+                            <div class="header-weather-time">
+                                <div id="clock"></div>
+                            </div>
+
+                            <div class="header-weather-cold">
+                                Cloudy
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="header-buttons">
+                    <div class="header-button-menu">
+                            <img src="image/svg/icons8-почтовый-фильтр-50.png" alt="почтовый-фильтр">
+                    </div>
+
+                    <div class="header-button-pc">
+                            <img src="image/svg/icons8-рабочая-станция-80.png" alt="рабочая-станция">
+                    </div>
+
+                    <div class="slider_container">
+                        <div class="fa-volume-down">
+                                <img src="image/svg/icons8-громкий-звук-50.png" alt="громкий-звук">
+                        </div>
+
+                        <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Intro start -->
+    <div class="intro">
+        <div class="container">
+            <div class="intro-wrapper-text">
+                <div class="details">
+                    <div class="now-playing">PLAYING x OF y</div>
+                    <div class="track-name"> Hikaru Nara</div>
+                    <div class="track-artist">Goose house</div>
+                </div>
+
+                <div class="slider_container">
+                    <div class="current-time">00:00</div>
+                    <input type="range" min="1" max="100" value="1000" class="seek_slider" onchange="seekTo()">
+                    <div class="total-duraction">00:00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Intro end -->
+
+    <!-- Footer start -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="controls">
+                    <div class="random-track" onclick="randomTrack()">
+                        <img class="random-track-image" title="random" src="image/svg/icons8-перемешать-60.png" alt="перемешать">
+                    </div>
+
+                    <div class="prev-track" onclick="prevTrack()">
+                        <img class="prev-track-image" src="image/svg/icons8-влево-в-квадрате-100.png" alt="влево">
+                    </div>
+
+                        <div class="playpause-track" onclick="playpauseTrack()">
+                            <img class="playpause-track-image" src="image/svg/icons8-пластинка-80.png" alt="перпластинкаемешать">
+                        </div>
+                    
+                    <div class="next-track" onclick="nextTrack()">
+                            <img class="next-track-image" src="image/svg/icons8-вправо-в-квадрате-100.png" alt="перевправомешать">
+                    </div>
+
+                    <div  class="repeat-track" onclick="repeatTrack()">
+                        <img class="repeat-track-image" title="repeat" src="image/svg/icons8-повтор-64.png" alt="повтор">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer end -->
+    <script src="js/script.js" ></script>
+</body>
+</html>
